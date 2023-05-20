@@ -1,0 +1,55 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #FCDCF9;
+}
+
+.container-logo{
+    width: 100vw;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 10vh;
+    width: 30vw;
+    filter: drop-shadow(8px 11px 5px rgba(0, 0, 0, 0.25));
+}
+
+.titulo{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
+    color: #3D353C;
+}
+
+.titulo::after{
+    content: '|';
+    margin-left: -2px;
+    opacity: 1;
+    animation: pisca .8s infinite;
+}
+
+@keyframes pisca {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.botao{
+    border: 0px;
+    background-color: #FD90F2;
+    font-size: 30px;
+    font-weight: 600;
+    color: #3D353C;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 30%;
+    height: 8vh;
+    cursor: pointer;
+}
